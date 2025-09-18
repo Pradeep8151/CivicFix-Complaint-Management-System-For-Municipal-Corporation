@@ -1,0 +1,39 @@
+body, .bg-light {
+  background: #f5f7fa !important;
+}
+
+.card {
+  border-radius: 12px;
+}
+
+.card .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.btn-primary:disabled {
+  background-color: #6c757d;
+  border: none;
+}
+
+.text-danger {
+  font-size: 0.95rem;
+}
+
+.error {
+  color: #d32f2f;
+  font-size: 0.8rem;
+}
+
+.error-message {
+  color: #d32f2f;
+  text-align: center;
+  margin-top: 0.75rem;
+}

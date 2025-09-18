@@ -1,0 +1,28 @@
+
+.card {
+	border-radius: 12px;
+}
+
+.card .card-title {
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+.display-6 {
+	font-size: 2.2rem;
+	font-weight: 700;
+}
+
+.table th, .table td {
+	vertical-align: middle;
+}
+
+.card-header {
+	font-size: 1.1rem;
+	border-bottom: 1px solid #eee;
+}
+
+.btn {
+	font-weight: 500;
+	letter-spacing: 0.5px;
+}

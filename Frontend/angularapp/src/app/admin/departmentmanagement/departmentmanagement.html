@@ -1,0 +1,56 @@
+<div class="container py-4">
+	<h2 class="mb-4 text-center">Department Management</h2>
+	<div class="card mb-4">
+		<div class="card-header bg-primary text-white">Add New Department</div>
+		<div class="card-body">
+			<form class="row g-3">
+				<div class="col-md-6">
+					<label for="deptName" class="form-label">Department Name</label>
+					<input type="text" class="form-control" id="deptName" placeholder="Enter department name" required>
+				</div>
+				<div class="col-md-6">
+					<label for="deptHead" class="form-label">Department Head</label>
+					<input type="text" class="form-control" id="deptHead" placeholder="Enter department head" required>
+				</div>
+				<div class="col-12 text-end">
+					<button type="submit" class="btn btn-success">Add Department</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="card">
+		<div class="card-header bg-secondary text-white">Departments List</div>
+		<div class="card-body p-0">
+			<table class="table table-striped mb-0">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Name</th>
+						<th>Head</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Sanitation</td>
+						<td>John Doe</td>
+						<td>
+							<button class="btn btn-sm btn-primary">Edit</button>
+							<button class="btn btn-sm btn-danger">Delete</button>
+						</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Water Supply</td>
+						<td>Jane Smith</td>
+						<td>
+							<button class="btn btn-sm btn-primary">Edit</button>
+							<button class="btn btn-sm btn-danger">Delete</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

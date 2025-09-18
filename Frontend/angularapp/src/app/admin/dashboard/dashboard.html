@@ -1,0 +1,88 @@
+
+<div class="container-fluid bg-light min-vh-100 py-4">
+	<h2 class="mb-4 text-center">Admin Dashboard</h2>
+	<div class="row g-4 mb-4">
+		<div class="col-md-3">
+			<div class="card text-white bg-primary h-100 shadow">
+				<div class="card-body">
+					<h5 class="card-title">Total Complaints</h5>
+					<p class="card-text display-6">1,234</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card text-white bg-success h-100 shadow">
+				<div class="card-body">
+					<h5 class="card-title">Resolved</h5>
+					<p class="card-text display-6">980</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card text-white bg-warning h-100 shadow">
+				<div class="card-body">
+					<h5 class="card-title">Pending</h5>
+					<p class="card-text display-6">200</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card text-white bg-danger h-100 shadow">
+				<div class="card-body">
+					<h5 class="card-title">Escalated</h5>
+					<p class="card-text display-6">54</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row g-4">
+		<div class="col-lg-8">
+			<div class="card shadow h-100">
+				<div class="card-header bg-white fw-bold">Recent Complaints</div>
+				<div class="card-body">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Title</th>
+								<th>Status</th>
+								<th>Date</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Water Leakage</td>
+								<td><span class="badge bg-warning text-dark">Pending</span></td>
+								<td>2025-09-10</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Street Light Issue</td>
+								<td><span class="badge bg-success">Resolved</span></td>
+								<td>2025-09-09</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Garbage Collection Delay</td>
+								<td><span class="badge bg-danger">Escalated</span></td>
+								<td>2025-09-08</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4">
+			<div class="card shadow h-100">
+				<div class="card-header bg-white fw-bold">Quick Links</div>
+				<div class="card-body d-grid gap-2">
+					<a routerLink="/admin/complaint-management" class="btn btn-outline-primary">Manage Complaints</a>
+					<a routerLink="/admin/user-management" class="btn btn-outline-secondary">User Management</a>
+					<a routerLink="/admin/department-management" class="btn btn-outline-success">Department Management</a>
+					<a routerLink="/admin/reports-management" class="btn btn-outline-warning">Reports</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
