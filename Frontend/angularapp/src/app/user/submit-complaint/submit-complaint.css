@@ -1,1 +1,57 @@
-h2 { color: #ffa000; }
+header {
+      background: #2b6cb0;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    .form-container {
+    max-width: 600px;
+    background: white;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2b6cb0;
+  }
+  label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+  }
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  textarea {
+    resize: vertical;
+  }
+  button {
+    width: 100%;
+    padding: 12px;
+    background: #2b6cb0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #245a99;
+  }
+  .back-link {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    color: #2b6cb0;
+    text-decoration: none;
+  }
+  .back-link:hover {
+    text-decoration: underline;
+  }
