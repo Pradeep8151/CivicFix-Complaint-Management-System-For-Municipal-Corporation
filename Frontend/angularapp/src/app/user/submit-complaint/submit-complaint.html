@@ -1,1 +1,44 @@
-<h2>Submit a Complaint</h2>
+
+
+<header class="complaint-header">
+  <h1>Submit Your Complaint</h1>
+</header>
+
+<div class="form-container">
+  <h2>Complaint Form</h2>
+  <form (ngSubmit)="onSubmit()" #complaintForm="ngForm">
+    <!-- Citizen Details -->
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" [(ngModel)]="complaint.name" required>
+
+    <label for="email">Email ID:</label>
+    <input type="email" id="email" name="email" [(ngModel)]="complaint.email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" [(ngModel)]="complaint.phone" required>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" [(ngModel)]="complaint.address" rows="2" required></textarea>
+
+    <!-- Complaint Details -->
+    <label for="category">Complaint Category:</label>
+    <select id="category" name="category" [(ngModel)]="complaint.category" required>
+      <option value="">--Select Category--</option>
+      <option value="Road">Road / Street</option>
+      <option value="Water">Water Supply</option>
+      <option value="Electricity">Electricity</option>
+      <option value="Garbage">Garbage Collection</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label for="description">Complaint Description:</label>
+    <textarea id="description" name="description" [(ngModel)]="complaint.description" rows="4" required></textarea>
+
+    <label for="file">Upload Proof (optional):</label>
+    <input type="file" id="file" name="file" (change)="onFileChange($event)" accept="image/*,video/*">
+
+    <button type="submit">Submit Complaint</button>
+  </form>
+  <a routerLink="/home" class="back-link">⬅ Back to Home</a>
+</div>
+
